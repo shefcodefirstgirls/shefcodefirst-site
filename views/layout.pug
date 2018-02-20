@@ -1,0 +1,13 @@
+doctype html
+html(lang="en")
+  head
+    title= title
+    include components/head
+    // Find SEO plugin!
+  body#page-top.index(data-spy="scroll" data-target="#nav" style="padding-top:56px;" data-offset="56")
+    include components/nav
+    block content
+    include components/footer
+    include components/portfolio-modals
+    include components/bootstrap-essentials 
+    // include any other js here, but shouldn't be any need

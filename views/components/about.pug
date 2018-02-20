@@ -1,0 +1,17 @@
+section#about.py-3(class="bg-{{ include.background-color }}")
+  .container(class="{{ include.color }}")
+    .text-center
+      h2 About
+    .row
+      .col-lg-6.offset-lg-3.text-justify
+        p
+          | I am a second-year student at the University of Sheffield, studying a four-year course in Computer Science including a year in industry. My main aim is to become a software developer, with the goal of building things that others will enjoy or find useful, no matter their level of skill. I am passionate about technologies such as Git, GitHub and Vim, and I like to explore and get involved in the local student hackathon community.
+      .text-center.col-12
+        // {% if include.background-color=="primary" %}
+        // {% assign btn-color = "secondary" %}
+        // {% else %}
+        // {% assign btn-color = "primary" %}
+        // {% endif %}
+        a.btn.btn-lg.btn-color(href="http://github.com/boardfish" class="btn-outline-{{ }}")
+          i.fa.fa-github
+          |  boardfish on GitHub

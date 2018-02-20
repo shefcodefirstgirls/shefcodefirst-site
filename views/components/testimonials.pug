@@ -1,0 +1,26 @@
+section#testimonials.py-3(class="bg-{{ include.background-color }} {{ include.color }}")
+  .container
+    .text-center
+      h2 Testimonials
+    .row
+      .text-center.col-lg-8.offset-lg-2
+        p
+          | "Simon has an ability to take a 
+          b complex task
+          |  (both IT-related and non-IT) and not only turn it around extremely quickly, but also to apply a level of thought and 
+          b ingenuity
+          |  of someone 
+          b a number of years more experienced.
+          |  It's this level of 
+          b output and creativity
+          |  which made the decision to bring Simon back after a few months in his summer holiday extremely easy."
+          br
+          strong Andy Sykes, formerly of Pera Technology
+        // {% if include.background-color=="primary" %}
+        // {% assign btn-color = "secondary" %}
+        // {% else %}
+        // {% assign btn-color = "primary" %}
+        // {% endif %}
+        a.btn.btn-lg.btn-color(href="{{ site.url }}/docs/PeraTechnologyReference.pdf" class="btn-outline-{{ }}")
+          i.fa.fa-file
+          |  Full reference
