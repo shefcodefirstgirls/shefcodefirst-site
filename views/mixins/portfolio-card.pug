@@ -1,0 +1,21 @@
+mixin card(image, location, name, icon, date, summary, projectname, technologies, link, description, type)
+  .card.p-3
+    img.card-image-top.w-100(src=image, alt=location)
+    .card-block
+      .card-title
+        span.fa-stack.fa-lg(style='z-index:2;')
+          i.fa.fa-circle.fa-stack-2x.text-primary
+          i.fa.fa-stack-1x.fa-inverse(class=icon)
+        h5(style='display:inline-block;') !{name}
+        br
+        small
+          i= location
+      p.card-text= summary
+      if type == "slides"
+        a.btn.btn-primary.h6.text-center.w-100(href=projectname)
+          i.fa.fa-folder-open-o
+          |  Slides
+      if type == "portfolio"
+        button.btn.btn-primary.h6.text-center.w-100(type='button', data-toggle='modal', data-target='#portfolioModal', data-title=name, data-subtitle=projectname, data-date=date, data-technologies=technologies, data-projectlink=link, data-content=description)
+          i.fa.fa-folder-open-o
+          |  More

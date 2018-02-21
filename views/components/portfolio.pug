@@ -1,36 +1,8 @@
-| {% if include.background-color!="primary" %} {% assign inverse-background-color="bg-primary" %} {% assign inverse-color="text-white" %} {% assign primary-color="text-primary" %} {% assign button-color="secondary" %} {% else %} {% assign inverse-color="text-primary" %} {% assign primary-color="text-white" %} {% assign button-color="primary" %} {% endif %}
-section.bg-{{.include.background-color.}}.py-3#portfolio
+section.bg-secondary.py-3#portfolio
   .container
-    .text-center.{{.include.color.}}
+    .text-center
       h2 Portfolio
     .card-columns
-      | {% for event in site.data.portfolio %}
-      .card.{{.inverse-background-color.}}.{{.inverse-color.}}
-        | {% if event.image %} 
-        img.card-image-top.w-100(src='{{ site.url }}/{{ event.image }}', alt='{{ event.name }}')
-        |  {% endif %}
-        .card-block.p-3
-          .card-title
-            span.fa-stack.fa-lg(style='z-index:2;')
-              i.fa.fa-circle.fa-stack-2x.{{.inverse-color.}}
-              | {% if event.icon %}
-              i.fa.{{.event.icon.}}.fa-stack-1x.{{.primary-color.}}
-              | {% else %}
-              i.fa.fa-comment.fa-stack-1x.{{.primary-color.}}
-              | {% endif %}
-            h5(style='display:inline-block;') {{ event.name }}
-            br
-            | {% if event.project_name %}
-            h6
-              i {{ event.project_name }}
-            p
-              | {% for tech in event.technologies %}
-              span.badge.badge-pill.badge-secondary {{ tech }}
-              | {% endfor %}
-            | {% endif %}
-          p.card-text {{ event.summary }}
-          .text-center
-            button.btn.btn-{{.button-color.}}.h6.w-100(type='button', data-toggle='modal', data-target='#portfolioModal', data-title='{{ event.name }}', data-subtitle='{{ event.project_name }}', data-date='{{ event.date }}', data-technologies='{{ event.technologies }}', data-projectlink='{{ event.link }}', data-content='{{ event.description }}')
-              i.fa.fa-folder-open-o
-              | More
-      | {% endfor %}
+      for event in portfolio
+        // p #{event}
+        +card(event.image, event.location, event.name, event.icon, event.date, event.summary, event.projectname, event.technologies, event.link, event.description, "portfolio")

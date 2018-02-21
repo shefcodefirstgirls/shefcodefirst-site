@@ -1,5 +1,5 @@
-section#about.py-3(class="bg-{{ include.background-color }}")
-  .container(class="{{ include.color }}")
+section#about.py-3.bg-primary.text-white
+  .container
     .text-center
       h2 About
     .row
@@ -12,6 +12,6 @@ section#about.py-3(class="bg-{{ include.background-color }}")
         // {% else %}
         // {% assign btn-color = "primary" %}
         // {% endif %}
-        a.btn.btn-lg.btn-color(href="http://github.com/boardfish" class="btn-outline-{{ }}")
+        a.btn.btn-lg.btn-outline-secondary(href="http://github.com/boardfish")
           i.fa.fa-github
           |  boardfish on GitHub

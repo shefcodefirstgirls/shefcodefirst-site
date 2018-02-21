@@ -1,37 +1,21 @@
-section.py-3.bg-{{.include.background-color.}}#slides
+section.py-3.bg-primary#slides
   .container
-    .text-center.{{.include.color.}}
+    .text-center.text-white
       h2 Slides
-    | {% assign slideCount = site.data.slides | size %}
     .offset-md-2.col-md-8
       table.text-center.h-100.w-100
         tbody
           tr
             td.align-middle
-              p.{{.include.color.}}.text-justify
-                | This year, I intend to focus on building my confidence in public speaking. My slides will be accessible here. Thanks to the flexibility of web languages,
-                a.{{.include.color.}}(href='https://github.com/hakimel/reveal.js') reveal.js
-                | is my tool of choice for creating slides.
-    | {% if slideCount > 1 %} {% if slideCount > 3 %}
-    .card-columns
-      | {% else %}
+              p.text-white.text-justify
+                | This year, I intend to focus on building my confidence in public speaking. My slides will be accessible here. Thanks to the flexibility of web languages, 
+                a.text-white(href='https://github.com/hakimel/reveal.js') reveal.js
+                |  is my tool of choice for creating slides.
+    if slides.length < 3
+      .card-columns
+        for pres in slides
+          +card(pres.image, pres.location, pres.name, pres.icon, pres.date, pres.summary, pres.projectname, pres.technologies, pres.link, pres.description, "slides")
+    else
       .card-deck
-        | {% endif %} {% for pres in site.data.slides %}
-        +portfolio-card
-      | {% else %} {% for pres in site.data.slides %}
-      .card.p-3.col-md-4.offset-md-4
-        img.card-image-top.w-100(src='{{ pres.image }}', alt='{{ pres.location }}')
-        .card-block
-          .card-title
-            span.fa-stack.fa-lg(style='z-index:2;')
-              i.fa.fa-circle.fa-stack-2x.text-primary
-              i.fa.{{.pres.icon.}}.fa-stack-1x.fa-inverse
-            h5(style='display:inline-block;') {{ pres.title }}
-            br
-            small
-              i {{}} {{ pres.location }}, {{ pres.date }}
-          p.card-text {{ pres.summary }}
-          a.btn.btn-primary.h6(href='/{{ pres.projectname }}')
-            i.fa.fa-folder-open-o
-            | Slides
-      | {% endfor %} {% endif %}
+        for pres in slides
+          +card(pres.image, pres.location, pres.name, pres.icon, pres.date, pres.summary, pres.projectname, pres.technologies, pres.link, pres.description, "slides")

@@ -1,0 +1,88 @@
+- name: Great<wbr>Uni<wbr>Hack
+  image: /images/portfolio/GreatUniHack-Winners.jpg
+  icon: fa-diamond
+  project_name: Game Master
+  summary: The product of my first hackathon, a text adventure game engine via Amazon Alexa with live web statistics.
+  date: 12-13 November, 2016
+  technologies: 
+    - HTML
+    - CSS
+    - jQuery
+    - ptty
+  link: https://devpost.com/software/game-master
+  description: "GreatUniHack 2016 was my first hackathon, a challenge I undertook in my eighth week at the University of Sheffield. I joined a team of three Manchester students. After a rocky first six hours toying with Bluetooth Low Energy hardware from Estimote and Sigfox in hopes of making a hide-and-seek game, we decided on making a voice-controlled text adventure game using Amazon Echo and a web frontend that displayed the player's statistics in real time.<br />The end result was Game Master, a text adventure game engine using Amazon Alexa through the Echo speaker. Several stats are kept track of during the sample game we created for it, which simulates GreatUniHack2016 itself, and these are displayed in real time by way of meters on a web page. In theory, this concept cannot be widely easily replicated, but for the sake of that single situation it was an effective option to add. With rumours of an Echo with a screen on the horizon at the time, perhaps a port could see the light of day? However, my team plans to do nothing more with the project."
+- name: HackNotts
+  image: /images/portfolio/HackNotts-Presenting.jpg
+  icon: fa-clock-o
+  project_name: Hacker<wbr>Tracker/<wbr>Prep
+  summary: We learned the ins and out of using APIs such as GitHub and Twitter. I have since worked on reimplementing it in Ruby.
+  date: 26-27 November 2016
+  technologies: 
+    - HTML/CSS
+    - PHP
+    - Ruby
+    - Public Speaking
+  link: https://github.com/boardfish/prep
+  description: "For this hackathon, I was happily assisted by fellow University of Sheffield students Sanziana Chiorescu, Darren Vong and Tzen Szen. We were far quicker to find an idea this time, after I remembered just how tough it was to keep track of what was going on. Having not worked personally with Amazon Alexa last time around, I wanted to learn how to use it, but we were a little late to get one from the Hardware Lab. To remedy this, it was suggested that we look into APIs, which brought up a variety of sources we could use: GitHub, Twitter, and DevPost, for example.<br />In the end, we came out with HackerTracker - intended to be an easy means of journalling the experience of a hackathon, using GitHub and Twitter input as landmarks. I am continuing to experiment with this prototype as an idea."
+- name: MLH Prime EU Regional
+  image: /images/portfolio/MLHPrimeEU-Presenting.jpg
+  icon: fa-bomb
+  project_name: Ka-Bomb!
+  summary: Our team created a prototype of an online multiplayer <i>Bomberman</i> clone, using a .NET socket server.
+  date: April 1-2 2017
+  technologies: 
+    - HTML
+    - CSS
+    - JS
+    - jQuery
+    - Public Speaking
+  link: https://devpost.com/software/ka-bomb-com
+  description: "After having attended two MLH hackathons in the Autumn 2017 season, I was accepted to participate in the Major League Hacking Europe Regional, which featured students from a wide variety of universities including those as far afield as UPC and Edinburgh. This was hosted at Bloomberg's headquarters in London on Finsbury Square. I intended to explore opportunities to team up with students from other universities at this event. To do this, I welcomed those who had set up camp nearby to join me in a game of <i>Super Bomberman R</i>. This game eventually went on to inspire our final product, as it had in a game jam I had taken part in the previous week.<br />In the end, we were able to create a prototype for an online multiplayer <i>Bomberman</i> clone. <i>Bomberman</i> has proven popular at university socials due to its capacity for up to 8 players, but equally, there is capacity for far more participation than that with the slightly younger trend of <abbr title='Massively Multiplayer Online Games'>MMOs</abbr> such as <a href='http://agar.io'>agar.io</a> and <a href='http://worldsbiggestpacman.com/play/'>World's Biggest PAC-MAN</a>."
+- name: Cal Hacks 4.0
+  icon: fa-users
+  project_name: mygit.club
+  summary: Using GitHub's GraphQL API, I helped build a front-facing organisation page.
+  date: 6th-7th October, 2017
+  technologies: 
+    - Node.js
+    - Pug
+    - GraphQL
+    - GitHub
+  link: https://github.com/hacksheffield/teams
+  description: "On our first full day in California, <a href='https://github.com/mattburman'>Matt</a>, <a href='https://github.com/p3rzival'>Borja</a> and I worked together to develop a more malleable team section for the HackSheffield society's website. As the founder of HackSheffield and a strong supporter of Git as a universal tool, Matt had the idea of using GitHub as a content management system for quite some time. I thought that GitHub's organisation support, and teams within those, had strong potential but weren't very front-facing to consumers. Inspired by 'meet the team' sections in some startups' sites, we decided to work on using GitHub to retrieve HackSheffield committee members' profiles in one smooth query with GraphQL, making the information more easy to maintain using GitHub itself. It also has the added benefit of decentralising the site's data to those who really should have control over it - the profiles visible there reflect the latest data they have made available on GitHub. We brought this live at <a href='http://mygit.club'>mygit.club</a>, but with time, it'll be merged into <a href='https://hack.sheffield.ac.uk'>hack.sheffield.ac.uk</a>."
+- name: Hack<wbr>Sheffield 3.0
+  image: /images/portfolio/HackSheffield.jpg
+  icon: fa-exclamation-circle
+  project_name: NotiFeed
+  summary: I led a team of first-time hackers using Express and Node.js.
+  date: 14th-15th October, 2017
+  technologies: 
+    - Express
+    - Node.js
+    - Bootstrap
+  link: https://github.com/boardfish/hacksheffield3
+  description: "HackSheffield 3.0 took place just one sleep after I'd landed in Sheffield after my California trip. I decided on building a team of first-time hackers after the turnout from that group seemed to form over two thirds of attendeees. My team had learned basic Python and web development, so we agreed on the gamble of working with the DragonBoard 410c. As had previously happened at GreatUniHack, toying with a single-board computer lost us four hours. Our original idea, however, survived. We intended to combine the power of Python and web development with various APIs to create a live feed of notifications from a variety of sources. This didn't work out for us as well as we'd hoped, as APIs weren't naturally suited to this. It did, however, open up the option of webhooks for further exploration in a later hackathon, potentially. My main focus was to improve my skills in team management and, particularly, motivate the less experienced female side of the team to explore and improve their web development skills further, and I feel that I did this well. A later personal project of mine, <a href='https://github.com/boardfish/socialise'>socialise</a>, serves as a base for first-time programmers dabbling in HTML and CSS."
+- name: Nintendo Event
+  image: /images/portfolio/NintendoEvent.jpg
+  icon: fa-gamepad
+  project_name: Super Mario Odyssey launch
+  summary: As a Brand Ambassador for Nintendo, I assisted with the Super Mario Odyssey launch.
+  date: 28th-29th October, 2017
+  technologies: 
+    - Nintendo Switch
+    - Sales
+  description: "After the game's launch the night before, I assisted in a nationwide release event for Super Mario Odyssey, a widely-acclaimed Nintendo Switch title. This exercised many of my softer skills - particularly, channeling my natural enthusiasm for the game into effective marketing. Across the 14 hours of work in that weekend, Kendal and I were tasked with selling to a wide variety of consumers, primarily parents. The vast majority of people we spoke to had little personal interest in the Switch console or knowledge of it, so it was necessary to focus my knowledge and experience into much a much simpler case that could connect with the consumer. This was an enjoyable experience that improved my social confidence."
+- name: BrumHack 7.0
+  image: /images/portfolio/BrumHack-Winner.jpg
+  icon: fa-moon-o
+  project)name: The Odyssey
+  summary: Inspired by Super Mario Odyssey, I explored Alexa Skills Kit and Discord's API, and built an API of my own surrounding the game's collectibles to work with the two.
+  date: 18th-19th November, 2017
+  technologies: 
+    - Alexa Skills Kit
+    - Discord API
+    - Flask
+    - Bootstrap
+    - Public Speaking
+  link: https://github.com/boardfish/the-odyssey
+  description: "Deciding on going solo for once on a personal quest to explore some new technologies, I chose to work with things I personally enjoyed. Taking <i>Super Mario Odyssey</i>, Amazon Alexa, Discord, and the web, I sought to build a means of locating the game's many Power Moons. <i>Odyssey</i> contains over 800 Power Moons hidden across the game's many sprawling Kingdoms, with some only available after the game's main story sequence is over. Each is named as a hint to their location, such as 'Under The Waterfall Basin' or 'Caught Hopping in the Cascade Kingdom'. These made for a great library of data to collect from across the web and serve as an API, which served as my starting point. After establishing this, I went on to build an Alexa skill with handy cards in the app and filtering by the name of each Kingdom. This only took about three hours, but needed a lot of polish and refinement - especially the filter function, which came in a fair while later.<br>The Discord bot accessed the database in the same manner as the API and Alexa skill - I intend to explore the potential of chatbots on Discord further. A website hosted with Flask was the icing on the cake. I went on to win another prize from Amazon Web Services for my use of Alexa Skills Kit, motivating me to submit the skill to the Alexa Skills Store."

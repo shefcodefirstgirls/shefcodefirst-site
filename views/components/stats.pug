@@ -1,0 +1,12 @@
+mixin stat(icon, number, fact)
+  ul.list-unstyled
+    li
+      i.fa.fa-fw(class=icon)
+      b #{number} 
+      .
+        #{fact}
+section.py-3#stats
+  .container
+    h2.text-center Stats
+    for stat in stats
+      +stat(stat.icon, stat.number, stat.fact)

@@ -17,6 +17,8 @@ h1 {
    font-family: Bungee Inline, $headings-font-family !important;
 }
 
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
 .logosquare:hover {
 	opacity: 0;
 }
@@ -41,5 +43,6 @@ h1 {
     transform: translate3d(0, 0, 0);
     animation: animatedBackground 3s linear infinite;
 }
-
-@import "../../node_modules/bootstrap/scss/bootstrap";
+// .navbar-brand {
+//    font-size: 1.75em;
+// }
