@@ -1,21 +1,16 @@
-section#contact.py-3(class="{{ include.color }} bg-{{ include.background-color }}")
+section#contact.py-3.bg-primary.text-white
   .container
     .row
       .col-lg-12.text-center
         h2 Contact Me
     .row
       .text-center.col-lg-6.offset-lg-3
-        p
-          | If you've taken an interest in what you see here, I look forward to you contacting me personally via any of the following means. I take commissions for websites, too - please contact me and I'll see what we can arrange!
-        // {% if include.background-color=="primary" %}
-        // {% assign btn-color = "secondary" %}
-        // {% else %}
-        // {% assign btn-color = "primary" %}
-        // {% endif %}
-        +contactbuttons
+        p If you've taken an interest in what you see here, I look forward to you contacting me personally via any of the following means. I take commissions for websites, too - please contact me and I'll see what we can arrange!
+        +contact-buttons("-outline", "-secondary")
         p
           | Or, if you're just looking out for me and appreciate anything I've done, I'm very grateful for that. A little appreciation goes a long way. I'm extremely grateful for any donations that come my way, so if you'd like to support me, I'd really appreciate it!
           br
           | Any and all donations received by way of this site will go towards development tools, my university education, and other suitable outlets.
-        a.btn.btn-color(href="https://monzo.me/simonfish" class="btn-outline-{{ }}")
-          i.fa.fa-fw.fa-credit-card
+        a.btn.btn-color(href="https://monzo.me/simonfish" class="btn-outline-secondary")
+          span
+            i.fa.fa-fw.fa-credit-card

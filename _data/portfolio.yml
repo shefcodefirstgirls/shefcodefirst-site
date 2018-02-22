@@ -41,7 +41,7 @@
 - name: Cal Hacks 4.0
   icon: fa-users
   project_name: mygit.club
-  summary: Using GitHub's GraphQL API, I helped build a front-facing organisation page.
+  summary: Using GitHub's GraphQL API, I helped build a front-facing organisation page. This hack was the start of a week-long tech pilgrimage to the USA, featuring GitHub and Google.
   date: 6th-7th October, 2017
   technologies: 
     - Node.js
@@ -49,7 +49,7 @@
     - GraphQL
     - GitHub
   link: https://github.com/hacksheffield/teams
-  description: "On our first full day in California, <a href='https://github.com/mattburman'>Matt</a>, <a href='https://github.com/p3rzival'>Borja</a> and I worked together to develop a more malleable team section for the HackSheffield society's website. As the founder of HackSheffield and a strong supporter of Git as a universal tool, Matt had the idea of using GitHub as a content management system for quite some time. I thought that GitHub's organisation support, and teams within those, had strong potential but weren't very front-facing to consumers. Inspired by 'meet the team' sections in some startups' sites, we decided to work on using GitHub to retrieve HackSheffield committee members' profiles in one smooth query with GraphQL, making the information more easy to maintain using GitHub itself. It also has the added benefit of decentralising the site's data to those who really should have control over it - the profiles visible there reflect the latest data they have made available on GitHub. We brought this live at <a href='http://mygit.club'>mygit.club</a>, but with time, it'll be merged into <a href='https://hack.sheffield.ac.uk'>hack.sheffield.ac.uk</a>."
+  description: "On our first full day in California, <a href='https://github.com/mattburman'>Matt</a>, <a href='https://github.com/p3rzival'>Borja</a> and I worked together to develop a more malleable team section for the HackSheffield society's website. As the founder of HackSheffield and a strong supporter of Git as a universal tool, Matt had the idea of using GitHub as a content management system for quite some time. I thought that GitHub's organisation support, and teams within those, had strong potential but weren't very front-facing to consumers. Inspired by 'meet the team' sections in some startups' sites, we decided to work on using GitHub to retrieve HackSheffield committee members' profiles in one smooth query with GraphQL, making the information more easy to maintain using GitHub itself. It also has the added benefit of decentralising the site's data to those who really should have control over it - the profiles visible there reflect the latest data they have made available on GitHub. We brought this live at <a href='http://mygit.club'>mygit.club</a>. I have since made my first pull request to <a href='https://hack.sheffield.ac.uk'>hack.sheffield.ac.uk</a> with the intent of porting it across and learned lots about Node.js in the process."
 - name: Hack<wbr>Sheffield 3.0
   image: /images/portfolio/HackSheffield.jpg
   icon: fa-exclamation-circle

@@ -1,6 +1,6 @@
 header
   section.py-3.bg-primary#header
-    .container.text-center.py-3.text-white
+    .container.text-center.py-3
       .row
         .col-lg-6
           img.img-fluid.rounded-circle(width='400px', src='images/profile.jpg', alt='Image of Simon')
@@ -9,8 +9,12 @@ header
             tbody
               tr
                 td.align-middle
-                  h1
+                  h1.text-white
                     | Simon Fish
+                  h3.text-white 
+                    | Computer Science student. 
                     br
-                  h3
-                    small Computer Science student
+                    | Tech evangelist. 
+                    br
+                    | Explorer.
+                  +contact-buttons("", "-secondary", "btn-lg")

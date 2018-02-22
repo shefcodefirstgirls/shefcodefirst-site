@@ -7,15 +7,7 @@ footer.text-center.bg-primary.text-white.py-3
           p Currently based at the University of Sheffield.
         .footer-col.col-md-4.my-3
           h3 Contact Me
-          .btn-group
-            a.btn.btn-outline-secondary(href="https://github.com/boardfish")
-              i.fa.fa-fw.fa-github
-            a.btn.btn-outline-secondary(href="https://www.linkedin.com/in/boardfish")
-              i.fa.fa-fw.fa-linkedin
-            a.btn.btn-outline-secondary(href="mailto:si@mon.fish")
-              i.fa.fa-fw.fa-envelope
-            a.btn.btn-outline-secondary(href="http://facebook.com/simonfish94")
-              i.fa.fa-fw.fa-facebook
+          +contact-buttons("-outline", "-secondary")
         .footer-col.col-md-4.my-3
           h3 TL;DR
           p
@@ -27,7 +19,8 @@ footer.text-center.bg-primary.text-white.py-3
       .row
         .col-lg-12
           | Copyright © Simon Fish, simon.fish 2016-2018
+          a.btn.btn-secondary.ml-3(href="#header")
+            span
+              i.fa.fa-fw.fa-chevron-up
+              | back to top
 // Scroll to Top Button (Only visible on small and extra-small screen sizes)
-.scroll-top.page-scroll.hidden-sm-up
-  a.btn.btn-primary.btn-block.rounded-0(href="#page-top")
-    i.fa.fa-chevron-up

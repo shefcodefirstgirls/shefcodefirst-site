@@ -1,30 +1,30 @@
-@import url('https://fonts.googleapis.com/css?family=Bungee|Bungee+Inline|Bungee+Shade|Lato');
+@import url('https://fonts.googleapis.com/css?family=Bungee|Bungee+Inline|Bungee+Shade|Bungee+Hairline|Lato');
 $font-family-sans-serif:      Lato, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 $headings-font-family: Bungee, $font-family-sans-serif;
 
 $theme-colors: (
-  "primary": #066e8a,
-  "secondary": white
+    "primary": #066e8a,
+    "secondary": white
 );
 
 // $enable-rounded: false;
 
 .navbar-brand {
-   font-family: Bungee Inline, $headings-font-family;
+    font-family: Bungee Inline, $headings-font-family;
 }
 
 h1 {
-   font-family: Bungee Inline, $headings-font-family !important;
+    font-family: Bungee Inline, $headings-font-family !important;
 }
 
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
 .logosquare:hover {
-	opacity: 0;
+    opacity: 0;
 }
 
 .logosquare {
-	transition: opacity ease-out 0.2s;
+    transition: opacity ease-out 0.2s;
 }
 
 @keyframes animatedBackground {
@@ -34,15 +34,44 @@ h1 {
 }
 
 #header {
-    background-image: url(/img/LogoBackground.svg);
+    background-image: url(/images/LogoBackground.svg);
     background-attachment: scroll;
     background-repeat: repeat;
     background-size: 50px;
-    text-shadow: 5px 5px #09323d;
     // background-position: center;
     transform: translate3d(0, 0, 0);
     animation: animatedBackground 3s linear infinite;
+    h1, h2, h3, h4, h5, h6{
+        text-shadow: 5px 5px #09323d;
+    }
 }
 // .navbar-brand {
 //    font-size: 1.75em;
 // }
+body { 
+    scroll-behavior: smooth; 
+}
+section:target {
+    padding-top: 56px;
+}
+
+.btn {
+    transform: skewX(-25deg) translateY(1px);
+
+}
+
+.btn span {
+    transform: skewX(25deg);
+    display: inline-block;
+    font-family: $headings-font-family;
+}
+nav .btn-lg {
+    font-family: Bungee Inline, $headings-font-family;
+    font-size: 1.25rem;
+}
+
+.lato {
+    font-family: $font-family-sans-serif;
+}
+
+.btn:hover .logosquare { fill: black; }
