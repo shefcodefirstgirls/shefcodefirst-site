@@ -6538,6 +6538,38 @@ nav .btn-lg, nav .btn-group-lg > .btn {
   font-family: Lato, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
 
 .btn:hover .logosquare {
-  fill: darkslateblue; }
+  fill: black; }
+
+.contact-buttons, .about-buttons, .testimonials-buttons {
+  transition: transform .1s; }
+
+.contact-buttons {
+  opacity: var(--contact-opacity);
+  transform: translateX(var(--contact-tx));
+  will-change: opacity, transform; }
+
+.about-buttons {
+  opacity: var(--about-opacity);
+  transform: translateX(var(--about-tx));
+  will-change: opacity, transform; }
+
+.testimonials-buttons {
+  opacity: var(--testimonials-opacity);
+  transform: translateX(var(--testimonials-tx));
+  will-change: opacity, transform; }
+
+.btn .expand-text {
+  width: 0;
+  overflow: hidden;
+  margin-right: 0;
+  transition: width .2s, margin .2s;
+  font-family: Lato, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  transform: skewX(0deg); }
+.btn i, .btn .expand-text {
+  display: inline-block;
+  vertical-align: middle; }
+.btn:hover .expand-text {
+  margin-right: 0;
+  width: 125px; }
 
 /*# sourceMappingURL=custom.css.map */

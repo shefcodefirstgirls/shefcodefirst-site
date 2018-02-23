@@ -75,3 +75,42 @@ nav .btn-lg {
 }
 
 .btn:hover .logosquare { fill: black; }
+
+.contact-buttons, .about-buttons, .testimonials-buttons {
+    transition: transform .1s;
+}
+.contact-buttons {
+    opacity: var(--contact-opacity);
+    transform: translateX(var(--contact-tx)); 
+    will-change: opacity, transform;
+}
+.about-buttons {
+    opacity: var(--about-opacity);
+    transform: translateX(var(--about-tx)); 
+    will-change: opacity, transform;
+}
+.testimonials-buttons {
+    opacity: var(--testimonials-opacity);
+    transform: translateX(var(--testimonials-tx)); 
+    will-change: opacity, transform;
+}
+.btn {
+  .expand-text {
+    width:0;
+    overflow:hidden;
+    margin-right:0;
+    transition:width .2s, margin .2s;
+    font-family: $font-family-sans-serif;
+    transform: skewX(0deg);
+  }
+  i, .expand-text {
+    display:inline-block;
+    vertical-align:middle;
+  }
+  &:hover {
+    .expand-text {
+      margin-right:0;
+      width:125px;
+    }
+  }
+}
