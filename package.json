@@ -6,9 +6,9 @@
     "start": "node ./bin/www",
     "start:watch": "nodemon --exec npm start",
     "sass": "sass ./public/stylesheets/scss/custom.scss ./public/stylesheets/css/custom.css",
-    "sass:watch": "sass --watch ./public/stylesheets/scss/custom.scss:./public/stylesheets/css/custom.css",
-    "browserify": "browserify ./public/javascripts/main.js -o ./public/javascripts/bundle.js",
-    "browserify:watch": "watchify ./public/javascripts/main.js -o ./public/javascripts/bundle.js",
+    "sass:watch": "sass --watch ./public/stylesheets/scss:./public/stylesheets/css",
+    "browserify": "browserify ./src/js/main.js -o ./public/javascripts/bundle.js",
+    "browserify:watch": "watchify ./src/js/main.js -o ./public/javascripts/bundle.js",
     "dev": "concurrently --kill-others \"npm run start:watch\" \"npm run sass:watch\" \"npm run browserify:watch\""
   },
   "dependencies": {

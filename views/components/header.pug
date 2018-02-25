@@ -3,18 +3,18 @@ header
     .container.text-center.py-3
       .row
         .col-lg-6
-          img.img-fluid.rounded-circle(width='400px', src='images/profile.jpg', alt='Image of Simon')
+          img.img-fluid.rounded-circle.animated.fadeInDown(width='400px', src='images/profile.jpg', alt='Image of Simon')
         .col-lg-6
           table.text-center.h-100.w-100
             tbody
               tr
                 td.align-middle
-                  h1.text-white
+                  h1.text-white.animated.fadeInRight
                     | Simon Fish
-                  h3.text-white 
+                  h3.text-white.animated.fadeInRight
                     | Computer Science student. 
                     br
                     | Tech evangelist. 
                     br
                     | Explorer.
-                  +contact-buttons("", "-secondary", "btn-lg")
+                  +contact-buttons("", "-secondary", "btn-lg animated fadeIn")

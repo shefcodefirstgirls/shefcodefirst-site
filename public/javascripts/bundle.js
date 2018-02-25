@@ -16718,8 +16718,21 @@ const basicScroll = require('basicscroll')
 const bootstrap = require('bootstrap')
 const $ = require('jquery')
 const popper = require('popper.js')
+$(window).on("load, resize", function() {
+    var viewportWidth = $(window).width();
+    console.log(viewportWidth)
+    if (viewportWidth < 768) {
+      $("nav li.fadeInUp").each(function() {
+        $(this).removeClass("fadeInUp").addClass("fadeInLeft");
+      })
+      $("nav li.fadeInDown").each(function() {
+        $(this).removeClass("fadeInDown").addClass("fadeInRight");
+      })
+    }
+});
 
 $(document).ready(function() {
+  console.log("Wabam.")
   // Portfolio modal information function
   $('#portfolioModal').on('show.bs.modal', function (event) {
     var button = $(event.relatedTarget) // Button that triggered the modal
