@@ -3,23 +3,23 @@ const bootstrap = require('bootstrap')
 const $ = require('jquery')
 const popper = require('popper.js')
 $(window).on("load, resize", function() {
-    var viewportWidth = $(window).width();
-    console.log(viewportWidth)
-    if (viewportWidth < 768) {
-      $("nav li.fadeInUp").each(function() {
-        $(this).removeClass("fadeInUp").addClass("fadeInLeft");
-      })
-      $("nav li.fadeInDown").each(function() {
-        $(this).removeClass("fadeInDown").addClass("fadeInRight");
-      })
-    } else {
-      $("nav li.fadeInLeft").each(function() {
-        $(this).removeClass("fadeInLeft").addClass("fadeInUp");
-      })
-      $("nav li.fadeInRight").each(function() {
-        $(this).removeClass("fadeInRight").addClass("fadeInDown");
-    }
-});
+  var viewportWidth = $(window).width()
+  if (viewportWidth < 768) {
+    $("nav li.fadeInUp").each(function() {
+      $(this).removeClass("fadeInUp").addClass("fadeInLeft")
+    })
+    $("nav li.fadeInDown").each(function() {
+      $(this).removeClass("fadeInDown").addClass("fadeInRight")
+    })
+  } else {
+    $("nav li.fadeInLeft").each(function() {
+      $(this).removeClass("fadeInLeft").addClass("fadeInUp")
+    })
+    $("nav li.fadeInRight").each(function() {
+      $(this).removeClass("fadeInRight").addClass("fadeInDown")
+    })
+  }
+})
 
 $(document).ready(function() {
   // Portfolio modal information function

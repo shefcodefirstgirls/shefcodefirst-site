@@ -1,22 +1,13 @@
+mixin contact-button(outline, color, lg, icon, text, href)
+    a.btn.btn-color(href=href target="_blank" class="btn" + outline + color + ' ' + lg)
+      span
+        i.fa.fa-fw(class=icon)
+        span.expand-text=text
+
 mixin contact-buttons(outline, color, lg)
   .btn-group.mb-3
-    a.btn.btn-color(href="https://github.com/boardfish" target="_blank" class="btn" + outline + color + ' ' + lg)
-      span
-        i.fa.fa-fw.fa-github
-        span.expand-text boardfish
-    a.btn.btn-color(href="https://www.linkedin.com/in/boardfish" target="_blank" class="btn" + outline + color + ' ' + lg)
-      span
-        i.fa.fa-fw.fa-linkedin
-        span.expand-text Simon Fish
-    a.btn.btn-color(href="mailto:si@mon.fish" target="_blank" class="btn" + outline + color + ' ' + lg)
-      span
-        i.fa.fa-fw.fa-envelope
-        span.expand-text si@mon.fish
-    a.btn.btn-color(href="https://twitter.com/boardfish_" target="_blank" class="btn" + outline + color + ' ' + lg)
-      span
-        i.fa.fa-fw.fa-twitter
-        span.expand-text @boardfish_
-    a.btn.btn-color(href="https://www.facebook.com/simonfish84" target="_blank" class="btn" + outline + color + ' ' + lg)
-      span
-        i.fa.fa-fw.fa-facebook
-        span.expand-text Simon Fish
+    +contact-button(outline, color, lg, "fa-github", "boardfish", "https://github.com/boardfish")
+    +contact-button(outline, color, lg, "fa-linkedin", "Simon Fish", "https://www.linkedin.com/in/boardfish")
+    +contact-button(outline, color, lg, "fa-envelope", "Simon Fish", "mailto:si@mon.fish")
+    +contact-button(outline, color, lg, "fa-twitter", "@boardfish_", "https://twitter.com/boardfish_")
+    +contact-button(outline, color, lg, "fa-facebook", "Simon Fish", "https://www.facebook.com/simonfish84")
