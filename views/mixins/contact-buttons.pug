@@ -4,10 +4,10 @@ mixin contact-button(outline, color, lg, icon, text, href)
         i.fa.fa-fw(class=icon)
         span.expand-text=text
 
-mixin contact-buttons(outline, color, lg)
+mixin contact-buttons(outline, lg)
   .btn-group.mb-3
-    +contact-button(outline, color, lg, "fa-github", "boardfish", "https://github.com/boardfish")
-    +contact-button(outline, color, lg, "fa-linkedin", "Simon Fish", "https://www.linkedin.com/in/boardfish")
-    +contact-button(outline, color, lg, "fa-envelope", "Simon Fish", "mailto:si@mon.fish")
-    +contact-button(outline, color, lg, "fa-twitter", "@boardfish_", "https://twitter.com/boardfish_")
-    +contact-button(outline, color, lg, "fa-facebook", "Simon Fish", "https://www.facebook.com/simonfish84")
+    +contact-button(outline, "-github", lg, "fa-github", "boardfish", "https://github.com/boardfish")
+    +contact-button(outline, "-linkedin", lg, "fa-linkedin", "Simon Fish", "https://www.linkedin.com/in/boardfish")
+    +contact-button(outline, "-gmail", lg, "fa-envelope", "Simon Fish", "mailto:si@mon.fish")
+    +contact-button(outline, "-twitter", lg, "fa-twitter", "@boardfish_", "https://twitter.com/boardfish_")
+    +contact-button(outline, "-facebook", lg, "fa-facebook", "Simon Fish", "https://www.facebook.com/simonfish84")

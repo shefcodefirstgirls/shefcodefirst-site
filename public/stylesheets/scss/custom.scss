@@ -4,7 +4,13 @@ $headings-font-family: Bungee, $font-family-sans-serif;
 
 $theme-colors: (
     "primary": #066e8a,
-    "secondary": white
+    "secondary": white,
+    "facebook": #3b5998,
+    "twitter": #00aced,
+    "linkedin": #0077b5,
+    "monzo": #ed5656,
+    "gmail": #c71610,
+    "github": #999
 );
 
 // $enable-rounded: false;
@@ -112,6 +118,18 @@ nav .btn-lg {
     .expand-text {
       margin-right:0;
       width:125px;
+    }
+  }
+}
+
+.btn-lg {
+  .expand-text {
+    font-family: inherit;
+  }
+  &:hover {
+    .expand-text {
+      margin-right:0;
+      width:250px;
     }
   }
 }
