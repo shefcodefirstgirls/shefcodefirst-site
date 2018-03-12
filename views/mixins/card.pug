@@ -1,6 +1,7 @@
 mixin card(image, location, name, icon, date, summary, projectname, technologies, link, description, type)
   .card.p-3
-    img.card-image-top.w-100.mb-3(src=image, alt=location)
+    if image
+      img.card-image-top.w-100.mb-3(src=image, alt=location)
     .card-block
       .card-title
         span.fa-stack.fa-lg(style='z-index:2;')
