@@ -86,3 +86,16 @@
     - Public Speaking
   link: https://github.com/boardfish/the-odyssey
   description: "Deciding on going solo for once on a personal quest to explore some new technologies, I chose to work with things I personally enjoyed. Taking <i>Super Mario Odyssey</i>, Amazon Alexa, Discord, and the web, I sought to build a means of locating the game's many Power Moons. <i>Odyssey</i> contains over 800 Power Moons hidden across the game's many sprawling Kingdoms, with some only available after the game's main story sequence is over. Each is named as a hint to their location, such as 'Under The Waterfall Basin' or 'Caught Hopping in the Cascade Kingdom'. These made for a great library of data to collect from across the web and serve as an API, which served as my starting point. After establishing this, I went on to build an Alexa skill with handy cards in the app and filtering by the name of each Kingdom. This only took about three hours, but needed a lot of polish and refinement - especially the filter function, which came in a fair while later.<br>The Discord bot accessed the database in the same manner as the API and Alexa skill - I intend to explore the potential of chatbots on Discord further. A website hosted with Flask was the icing on the cake. I went on to win another prize from Amazon Web Services for my use of Alexa Skills Kit, motivating me to submit the skill to the Alexa Skills Store."
+- name: HackTheBurgh 2018
+  icon: fa-circle
+  project)name: ShefBall
+  summary: As my final second year hackathon, I used my learnings from MLH Prime to explore Kiwi.js and build a web-based dodgeball game.
+  date: 10th-11th March, 2018
+  technologies: 
+    - Kiwi.js
+    - Node.js
+    - Socket.js
+    - Express.js
+    - Public Speaking
+  link: https://github.com/boardfish/hacktheburgh
+  description: "Hoping for a final hackathon opportunity to round off my second year at university, I attended HackTheBurgh 2018 with three capable teammates in tow. After a lot of deliberation over which language to settle on and which idea to follow through with, we found ourselves agreeing on ShefBall. This, like ka-bomb.com before it, would be a MMO reinterpretation of a video game I had recently picked up. This was Stikbold, a charming Danish dodgeball game that is extremely easy to pick up and play.<br>We sought to use socket.io to buy us extra time to think about the game's core mechanics and how that would translate to socket server infrastructure. With Katie and Hamish working on assets and collisions, I worked with Greg on getting the business logic solidified. This resulted in a game that worked relatively well at its core, much like ka-bomb.com, but felt a lot more polished—and, best of all, was genuinely fun for all to play, including the developers who'd burned 24 hours on it!<br>Working on the project helped me consider the finer points of using sockets and gave me some further confidence in game development. Though I'm currently strongly of the mindset that I intend to develop software, ShefBall has left game development on the table as an option. It's also introduced me to socket servers properly and secured our team a prize thanks to Craneware."
