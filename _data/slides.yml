@@ -1,7 +1,14 @@
-- name: "Eat, Sleep, Hack: On Hackathons and Computer Science at University"
+- name: "Eat, Sleep, Hack: On Hack&shy;athons and Computer Science at University"
   location: Catmose College
   date: 2018/01/11
   summary: Student hackathons have been central to my time at the University of Sheffield.
+  projectname: presentation-2018-01
+  # image: /img/slides/CatmoseCollege.jpg
+  icon: fa-code
+- name: "#shef<wbr>code<wbr>first Bootstrap session"
+  location: The Diamond, University of Sheffield
+  date: 2018/02/20
+  summary: A lesson in the world's most popular frontend component library.
   projectname: presentation-2018-01
   # image: /img/slides/CatmoseCollege.jpg
   icon: fa-code
