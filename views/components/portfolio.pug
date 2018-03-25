@@ -2,7 +2,9 @@ section.bg-secondary.py-3#portfolio
   .container
     .text-center
       h2 Portfolio
-    .card-columns
-      for event in portfolio
-        // p #{event}
-        +card(event.image, event.location, event.name, event.icon, event.date, event.summary, event.projectname, event.technologies, event.link, event.description, "portfolio")
+    .container-fluid
+      .grid
+        .grid-sizer.col-md-4
+        for event in portfolio
+          .grid-item.col-md-4
+            +card(event.image, event.location, event.name, event.icon, event.date, event.summary, event.projectname, event.technologies, event.link, event.description, "portfolio")

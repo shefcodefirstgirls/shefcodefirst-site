@@ -2,6 +2,8 @@ const basicScroll = require('basicscroll')
 const bootstrap = require('bootstrap')
 const $ = require('jquery')
 const popper = require('popper.js')
+const Masonry = require('masonry-layout')
+const jQueryBridget = require('jquery-bridget')
 $(window).on("load, resize", function() {
   var viewportWidth = $(window).width()
   if (viewportWidth < 768) {
@@ -112,4 +114,10 @@ $(document).ready(function() {
     basicScrollContactButtons.calculate()
     basicScrollContactButtons.update()
   }
+})
+jQueryBridget( 'masonry', Masonry, $  )
+$('.grid').masonry({
+  itemSelector: '.grid-item',
+  columnWidth: '.grid-sizer',
+  percentPosition: true
 })

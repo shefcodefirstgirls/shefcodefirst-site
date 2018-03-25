@@ -43,7 +43,7 @@ router.get('/', function(req, res, next) {
       const issueComments = simon.issueComments.totalCount
       const isHireable = simon.isHireable
       const isCampusExpert = simon.isCampusExpert
-      const portfolioYaml = yaml.safeLoad(fs.readFileSync('_data/portfolio.yml', 'utf8'));
+      const portfolioYaml = yaml.safeLoad(fs.readFileSync('_data/portfolio.yml', 'utf8')).reverse();
       const slidesYaml = yaml.safeLoad(fs.readFileSync('_data/slides.yml', 'utf8'));
       const statsQuery = [
         { "fact": "repositories contributed to", 
