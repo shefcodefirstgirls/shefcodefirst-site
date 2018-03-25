@@ -1,13 +1,23 @@
 mixin stat(icon, number, fact)
-  li
-    i.fa.fa-fw(class=icon)
-    | #{number} 
-    | #{fact}
+  .card.mb-3
+    .card-body
+      i.fa.fa-fw(class=icon)
+      | #{number} 
+      | #{fact}
+  // li
 section.py-3#stats
   .container
-    h2.text-center.pb-3 Stats
-    ul.list-unstyled.text-center
-      each stat, index in stats
-        if index != 0
-          hr
-        +stat(stat.icon, stat.number, stat.fact)
+    .row
+      .col-md
+        h2.text-center.pb-3 Git Stats
+        ul.list-unstyled.text-center
+          each stat, index in stats
+            if index != 0
+              hr
+            +stat(stat.icon, stat.number, stat.fact)
+      .col-md
+        h2.text-center Affiliations
+        p I do my best to help the tech community in a variety of ways. My GitHub Organisations show who I've worked with - find out more about them here.
+        .card-columns
+          for org in orgs
+            +card(org.avatarUrl, "", org.name, "fa-globe", "", org.description, "", "", org.url, "", "org")

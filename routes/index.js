@@ -13,6 +13,7 @@ const graphql = `{
           name
           url
           avatarUrl
+          description
         }
       }
     }
@@ -35,9 +36,8 @@ router.get('/', function(req, res, next) {
   axios.post('https://api.github.com/graphql',
     { query: graphql }, { headers: {'Authorization': `Bearer ${GITHUB_TOKEN}`} })
     .then((graphqlRes) => {
-      console.log(JSON.stringify(graphqlRes.data.data.viewer))
       const simon = graphqlRes.data.data.viewer
-      const organizations = simon.organizations.edges.map(edge => edge.node);
+      const orgs = simon.organizations.edges.map(edge => edge.node);
       const contributedRepositories = simon.contributedRepositories.totalCount
       const starredRepositories = simon.starredRepositories.totalCount
       const issueComments = simon.issueComments.totalCount
@@ -62,6 +62,7 @@ router.get('/', function(req, res, next) {
       res.render('index', { 
         title: 'Simon Fish', 
         portfolio: portfolioYaml, 
+        orgs: orgs, 
         slides: slidesYaml, 
         stats: statsQuery,
         isHireable: isHireable

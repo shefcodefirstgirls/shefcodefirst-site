@@ -4,9 +4,10 @@ mixin card(image, location, name, icon, date, summary, projectname, technologies
       img.card-image-top.w-100.mb-3(src=image, alt=location)
     .card-block
       .card-title
-        span.fa-stack.fa-lg(style='z-index:2;')
-          i.fa.fa-circle.fa-stack-2x.text-primary
-          i.fa.fa-stack-1x.fa-inverse(class=icon)
+        if type != "org"
+          span.fa-stack.fa-lg(style='z-index:2;')
+            i.fa.fa-circle.fa-stack-2x.text-primary
+            i.fa.fa-stack-1x.fa-inverse(class=icon)
         h5(style='display:inline-block;') !{name} 
         br
         small
@@ -17,6 +18,11 @@ mixin card(image, location, name, icon, date, summary, projectname, technologies
           span.text-white
             i.fa.fa-folder-open-o
             |  Slides
+      if type == "org"
+        a.btn.btn-github.h6.text-center.w-100(href=link,target="_blank")
+          span.text-white
+            i.fa.fa-github
+            |  More
       if type == "portfolio"
         a.btn.btn-primary.h6.text-center.w-100(type='button', data-toggle='modal', data-target='#portfolioModal', data-title=name, data-subtitle=projectname, data-date=date, data-technologies=technologies, data-projectlink=link, data-content=description)
           span.text-white
